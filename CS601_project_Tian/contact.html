@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="contact-form.js"></script>
+</head>
+
+    <header>
+        <div class="web-name">
+            <h1>Sisi Music Studio</h1>
+
+        </div>
+
+        <div class="logo-nav">
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="my_story.html">My story</a>
+                <a href="program.html">Program</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+                
+                
+             </nav>
+
+        </div>
+     </header>
+
+     <div class="contact-img">
+        <img src="piano.jpeg" alt="piano">
+
+     </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <p>Want to ask a question, inquire, or just say hi?</p>
+            <p>We'd love to hear from you.
+            <br>
+            <br>
+            <p><strong>Phone</strong></p>
+            408-123-5678
+            <p><strong>Email</strong></p>
+            sisitian30@gmail.com
+    
+            
+        </div>
+    
+        <div class="form">
+            <div id="error"></div>
+            <form id="form" action="https://formsubmit.co/sisitian@bu.edu" method="POST">
+                <h3>Contact Form</h3>
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Your email" required>
+                <label for="phone"></label>
+                <input type="tel" id="phone" placeholder="Phone number:123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <textarea id="message" rows="4" placeholder="Message"></textarea>
+                <button type="submit">Send </button>
+            </form>
+        </div>
+    
+    </div>
+
+    
+    <footer class="footer">
+        &copy;2023.Sisi Tian</footer>
+
+    
+
+</html>
+
+
+

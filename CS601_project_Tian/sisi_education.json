@@ -1,0 +1,20 @@
+    {
+        "MyEducation": [
+            {
+                "degree": {
+                    "school": "Boston University",
+                    "major": "Software Development",
+                    "type": "MS",
+                    "yearConferred": 2024
+                }
+            },
+            {
+                "degree": {
+                    "school": "San Francisco State University",
+                    "major": "Music",
+                    "type": "MS",
+                    "yearConferred": 2024
+                }
+            }
+        ]
+    }

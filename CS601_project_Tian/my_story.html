@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="web-name">
+            <h1>Sisi Music Studio</h1>
+
+        </div>
+
+        <div class="logo-nav">
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="my_story.html">My story</a>
+                <a href="program.html">Program</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <div class="my-story">
+        <div class="bio">
+            <p>Sisi was born into a musical family. When she was four years old, she began learning piano from her
+                grandmother who is a fantastic music teacher. She
+                started participating in piano competitions when She was 8 years old and obtained the
+                certificate of Chinese National Piano Grade Exam - Grade 10 when she was 12 years old.
+            </p>
+            <br>
+            <p>After she went to college, she joined the
+                music department of the Students' Union and devoted herself to the school's music
+                events. She and her colleagues built a club for students who love music and offered them more
+                opportunities to show their talent. In the meantime, she became a certified examiner of the
+                Chinese Piano Grade Exam. Based on her good performance at College, Professor John Thomsen referred her
+                to
+                teach piano at Piano Academy. After receiving some training from the principal Christie Skousen, she
+                became
+                a licensed teacher. She customized the lesson plan based on every student`s character. Moreover, she was
+                so
+                honored to have received the “teacher of the year“ award from Piano Academy once.
+            </p>
+            <br>
+            <p>She started pursuing her Master degree in
+                Music at San Francisco State University with scholarship in 2021. Her mentor is distinguished pianist
+                and
+                professor - Dr. <!-- Hyperlink -->
+                <a href="https://music.sfsu.edu/victoria-neve">Victoria Neve</a>. During that time she
+                was fascinated by world music which she later received the Michael Segrove Avalos Award
+                in the competition of Hispanic music.
+            </p>
+        </div>
+
+    </div>
+
+        <br>
+
+    <div class="my-story">
+        
+        <div id="projects"></div>
+        <script src="my_story.js"></script>
+        
+        
+    </div>
+        
+    <br>
+        
+        
+        
+        
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <div id="app" class="my-story">
+        <img :src="currentImage" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" alt="currentImage"/>
+    
+    
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    defaultImage: 'IMG_7139.JPG', // Path to the default image
+                    hoverImage: 'IMG_7148.JPG', // Path to the hover image
+                    currentImage: 'IMG_7139.JPG', // Path to the current image displayed
+
+                },
+                methods: {
+                    handleMouseEnter() {
+                        this.currentImage = this.hoverImage;
+                    },
+                    handleMouseLeave() {
+                        this.currentImage = this.defaultImage;
+                    },
+
+                }
+            });
+        </script>
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+    
+    </html>
