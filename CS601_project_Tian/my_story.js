@@ -25,7 +25,7 @@
 
 
 
-fetch('http://127.0.0.1:5501/sisi_education.json')
+fetch('https://sisimetcs.github.io/metcs601_TermProject/CS601_project_Tian/sisi_education.json')
     .then(res => {
         if (res.ok) {
             console.log('Success')
